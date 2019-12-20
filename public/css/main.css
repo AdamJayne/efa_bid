@@ -1,3 +1,8 @@
+/* Navbar Stylesheet */
+@import url('./navbar.css');
+/* Homepage Stylesheet */
+@import url('./home.css');
+
 html {
  box-sizing: border-box;
  -ms-text-size-adjust: 100%;
@@ -8,7 +13,7 @@ html {
 }
 body {
  margin: 0;
- font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+ font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 h1, h2, h3, h4, h5, h6, p, ul {
  margin: 0;

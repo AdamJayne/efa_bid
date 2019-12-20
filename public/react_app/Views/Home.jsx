@@ -3,15 +3,23 @@ import React, { Component } from 'react';
 const Home = () => {
     
     return (
-        <div>
-            <div className="home-card">
-                <h1>My name is Adam</h1>
-                <img
-                    src="public/images/AdamJayne2.jpg"
-                    alt="My Photo"
-                    width={100}
-                />
-            </div>
+        <div id="home">
+            <section className="home-banner">
+                <div className="home-intro">
+                    <div className="home-intro-textbox">
+                        <h1>Hello there!</h1>
+                        <h1>My name is Adam Jayne</h1>
+                        <h1>I am an Instructor at Eleven Fifty Academy</h1>
+                    </div>
+                        
+                </div>
+                <div className="home-image">
+                    <div className="my-face" />
+                </div>
+            </section>
+            <section className="about-me">
+                
+            </section>
         </div>
     )
 }

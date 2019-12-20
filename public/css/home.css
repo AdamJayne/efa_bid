@@ -1,0 +1,44 @@
+.home-banner {
+    display: flex;
+    height: 600px;
+    transform: skewY(-2deg);
+    margin-top: 100px;
+    background-color: black;
+}
+.home-intro {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.home-intro-textbox {
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-around;
+    /* transform: skewY(deg); */
+}
+
+.home-intro-textbox h1 {
+    font-size: 2.6em;
+    font-weight: 600;
+    color: #fff;
+}
+
+.home-image {
+    width: 50%;
+    height: 600px;
+}
+
+.my-face {
+    height: 100%;
+    background: url('../images/AdamJayne2.jpg') no-repeat;
+    /* background-color: #e33e42; */
+    background-position: top;
+    background-size: contain;
+    background-clip: content-box;
+    opacity: 90%;
+}

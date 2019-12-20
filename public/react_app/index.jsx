@@ -9,7 +9,7 @@ import {
     NotFound,
     Experience
 } from './Views';
-import BottomBar from './components/BottomBar';
+import Navbar from './components/Navbar';
 
 
 class App extends Component {
@@ -17,6 +17,7 @@ class App extends Component {
         return (
             <div>
                 <HashRouter>
+                    <Navbar />
                     <Switch>
                         <Route exact path="/learning" component={Learning} />
                         <Route exact path="/instruction" component={Instruction} />
@@ -25,7 +26,6 @@ class App extends Component {
                         <Route exact path="/" component={Home} />
                         <Route exact path="/**" component={NotFound} />
                     </Switch>
-                    <BottomBar />
                 </HashRouter>
             </div>
         )
