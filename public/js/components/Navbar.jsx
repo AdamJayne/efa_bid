@@ -9,7 +9,15 @@ const Navbar = (props) => {
                     <span>/ Adam /</span>
                 </Link>
             </div>
+            {/* <div className="nav-toggle">
+                <span>M</span>
+            </div> */}
             <ul className="nav-items">
+                <li className="nav-item">
+                    <Link to="/">
+                        <span>About</span>
+                    </Link>
+                </li>
                 <li className="nav-item">
                     <Link to="/learning">
                         <span>Learning</span>

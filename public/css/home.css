@@ -42,3 +42,13 @@
     background-clip: content-box;
     opacity: 90%;
 }
+
+@media (max-width: 320px) {
+    .home-banner {
+        flex-direction: column;
+    }
+}
+
+.about-me {
+    margin-top: 50px;
+}
