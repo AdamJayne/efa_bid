@@ -7,7 +7,7 @@ app = Flask(__name__, static_folder='./public')
 @app.route('/')
 def home():
     # TODO: This is where the react app will be returned
-    return render_template('soon.html')
+    return render_template('index.html')
 
 if __name__ == "__main__":
     app.run()

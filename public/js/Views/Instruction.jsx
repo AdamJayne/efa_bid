@@ -1,19 +1,63 @@
 import React from 'react';
 
 const Instruction = () => {
+
     return (
         <div>
-            <h1>Instructional Excellence</h1>
-            <img src="public/images/me.png" width={400} />
-            <p>
-                I have strived for instructional excellence when presenting topics to students. Every moment is a lesson, every mind is different, and molding your understanding to match another's thought patterns increases your understanding of material.
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                Group instruction paired with individualized approach.
-            </p>
+            <div className="header">
+                <h1 className="header-title">
+                    Instructional
+                    <br />
+                    Excellence
+                </h1>
+            </div>
+            <div className="after-header">
+                <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <polygon fill="black" points="0,0 100,0 0,100" />
+                </svg>
+            </div>
+            <div className="instruction-content">
+                <div className="image-box" />
+                <div className="instruction-description">
+                    <div className="description-content">
+                        <p>
+                            I have strived for efficiency when presenting topics to students.
+                        </p>
+                        <p>
+                            Every moment is a lesson, every mind is different, and molding your understanding to match another's thought patterns increases your understanding of material.
+                        </p>
+                        <p>
+                            It's incredibly exciting and satisfying watching individuals go from knowing very little about development to near complete independence.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div className="after-header">
+                <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <polygon fill="#EC494B" points="0,0 100,0 100,100" />
+                </svg>
+            </div>
+            <div className="feedback-section">
+                <div className="feedback-title">
+                    <h1>Student Feedback</h1>
+                </div>
+                <div className="feedback">
+                    <p>
+                        Adam is an incredible teacher who goes above and beyond with helping students when they don't understand things. Adam takes the time to sit down and makes sure you understand the issue rather than moving forward. 
+                    </p>
+                    <p>
+                       Python Student
+                    </p>
+                </div>
+                <div className="feedback">
+                    <p>
+                        Adam went above and beyond to make sure we were prepared.
+                    </p>
+                    <p>
+                        Javascript Student
+                    </p>
+                </div>
+            </div>
         </div>
     );
 }

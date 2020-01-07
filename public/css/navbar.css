@@ -1,5 +1,6 @@
 :root {
     --primary: #EC494B;
+    --light: rgb(255, 179, 179);
 }
 
 .navbar {
@@ -10,6 +11,10 @@
     top: 0;
     width: 100%;
     z-index: 100;
+}
+
+.navbar-toggler {
+    display: none;
 }
 
 .nav-items {
@@ -46,14 +51,49 @@
 }
 
 .nav-item:hover {
-    background-color: rgb(255, 179, 179);
+    background-color: var(--light);
 }
 
 .nav-item:hover > a span {
     color: darkslategrey;
 }
 
-/* @media (max-width: 750px) {
+@media (max-width: 815px) {
+
+    #banner {
+        display: none;
+    }
+
+    .navbar {
+        height: 100vh;
+        width: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        transition: 0.5s ease;
+        background-color: transparent;
+        z-index: 10;
+    }
+
+    .navbar-opened {
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: var(--primary);
+        transition: 0.5s ease;
+        z-index: 10;
+    }
+
+    .navbar-list {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        padding-left: 40px;
+        transition: 0.5s ease;
+    }
+
     .nav-items {
         position: absolute;
         top: 0;
@@ -63,7 +103,46 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
-        background-color: var(--primary);
+        justify-content: center;
+        background-color: transparent;
+        transition: 0.5 ease;
     }
-} */
+
+    .nav-items-opened {
+        background-color: var(--primary);
+        transition: 0.5s ease;
+    }
+
+    .navbar-toggler {
+        display: initial;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        height: 40px;
+        width: 40px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        background: var(--primary);
+        transition: 1s ease;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        z-index: 12;
+    }
+
+    .navbar-toggler-opened {
+        display: initial;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        height: 40px;
+        width: 40px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        background: #000;
+        transition: 1s ease;
+        z-index: 12;
+    }
+}

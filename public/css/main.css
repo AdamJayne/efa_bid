@@ -2,6 +2,8 @@
 @import url('./navbar.css');
 /* Homepage Stylesheet */
 @import url('./home.css');
+/* Instruction Page Stylesheet */
+@import url('./instruction.css');
 
 html {
  box-sizing: border-box;

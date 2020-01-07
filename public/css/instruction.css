@@ -1,0 +1,89 @@
+
+:root {
+    --primary: #EC494B;
+}
+
+.header {
+    width: 100%;
+    height: 120px;
+    background-color: #000;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.header-title {
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+.after-header {
+    margin-top: -1px;
+}
+
+svg {
+    width: 100%;
+    height: 25px;
+    /* set height to pixels if you want angle to change with screen width */
+}
+
+.image-box {
+    margin-top: -28px;
+    height: 400px;
+    width: 100%;
+    background-image: url('../images/me.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -2;
+}
+
+.instruction-description {
+    position: relative;
+    background-color: var(--primary);
+    padding: 16px;
+}
+
+.description-content {
+    color: #fff;
+    line-height: 1.4em;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.description-content p {
+    margin-bottom: 16px;
+}
+
+.description-content p:last-child {
+    margin-bottom: 30px;
+}
+
+.feedback-section {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    padding: 16px;
+}
+
+.feedback-title {
+    
+}
+
+.feedback {
+    margin-top: 50px;
+}
+
+.feedback p {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.feedback p:last-child {
+    font-size: 1em;
+    font-weight: 300;
+    color: lightslategrey;
+    float: right;
+}
