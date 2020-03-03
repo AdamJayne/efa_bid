@@ -9,8 +9,7 @@ const Navbar = (props) => {
         { text: 'About', route: '/' },
         { text: 'Learning', route: '/learning' },
         { text: 'Instruction', route: '/instruction' },
-        { text: 'Curriculum', route: '/curriculum' },
-        { text: 'Experience', route: '/experience' }
+        { text: 'Curriculum', route: '/curriculum' }
     ]
     return (
         <div className={ isOpen ? 'navbar-opened' : 'navbar' }>

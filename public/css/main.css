@@ -4,6 +4,8 @@
 @import url('./home.css');
 /* Instruction Page Stylesheet */
 @import url('./instruction.css');
+/* Learning Page Stylesheet */
+@import url('./learning.css');
 
 html {
  box-sizing: border-box;
@@ -20,4 +22,60 @@ body {
 h1, h2, h3, h4, h5, h6, p, ul {
  margin: 0;
  padding: 0;
+}
+
+.header {
+  width: 100%;
+  height: 120px;
+  background-color: #000;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.header-title {
+  color: #fff;
+  font-size: 1.8em;
+
+}
+
+.after-header {
+  margin-top: 0px;
+}
+
+svg {
+  width: 100%;
+  height: 25px;
+  /* set height to pixels if you want angle to change with screen width */
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+@media(max-width: 1000px) {
+  .container {
+    max-width: 800px;
+    margin: auto;
+  }
+}
+
+@media(min-width: 815px) {
+  .header {
+    margin-top: 60px;
+  }
+}
+
+@media(max-width: 800px) {
+  .container {
+    max-width: 500px;
+    margin: auto;
+  }
+}
+
+@media(max-width:500px) {
+  .page-header {
+    margin-top: 0;
+  }
 }

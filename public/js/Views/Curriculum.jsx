@@ -2,8 +2,15 @@ import React from 'react';
 
 const Curriculum = () => {
     return (
-        <div style={{marginTop: "60px"}}>
-            <h1>Curriculum Management</h1>
+        <div>
+            <div className="header">
+                <h1 className="header-title">Curriculum</h1>
+            </div>
+            <div className="after-header">
+                <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <polygon fill="black" points="0,0 100,0 0,100" />
+                </svg>
+            </div>
             <p>
                 From concept to implementation
             </p>

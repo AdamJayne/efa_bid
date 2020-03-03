@@ -1,116 +1,205 @@
-
 .home-banner {
-    display: flex;
-    height: 600px;
-    transform: skewY(-2deg);
-    margin-top: 100px;
-    background-color: black;
+  display: flex;
+  height: 600px;
+  /* transform: skewY(-2deg); */
+  /* margin-top: 50px; */
+  background-color: black;
+  /* padding: 0 200px; */
+}
+
+.innerBox {
+  height: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
 }
 
 .home-intro {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 16px;
 }
 
 .home-intro-textbox {
-    width: 80%;
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    justify-content: space-around;
-    /* transform: skewY(deg); */
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-around;
+  /* transform: skewY(deg); */
 }
 
 .home-intro-textbox h1 {
-    font-size: 2.6em;
-    font-weight: 600;
-    color: #fff;
+  font-size: 2.6em;
+  font-weight: 600;
+  color: #fff;
 }
 
 .home-image {
-    width: 50%;
-    height: 70%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .my-face {
-    height: 100%;
-    background: url('../images/AdamJayne2.jpg') no-repeat;
-    /* background-color: #e33e42; */
-    background-position: top;
-    background-size: cover;
-    background-clip: content-box;
-    opacity: 90%;
-    /* padding: 15px; */
-    max-width: 500px;
+  height: 80%;
+  width: 60%;
+  background: url('../images/AdamJayne2.jpg') no-repeat;
+  background-position: top;
+  background-size: cover;
+  max-width: 500px;
+  margin: auto;
 }
 
-/* .after-box {
-    display: none;
-} */
+#aboutMe {
+  margin-top: 45px;
+}
+
+@media (max-width: 1000px) {
+
+  .home-image {
+    padding: 15px;
+  }
+
+  .my-face {
+    width: 100%;
+  }
+
+}
+
+@media (min-width: 1000px) {
+  .innerBox {
+    width: 800px;
+  }
+  .about-me {
+    width: 800px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1050px) {
+
+  .innerBox {
+    width: 1000px;
+  }
+
+}
+
+@media (min-width: 500px) {
+  
+  .home-intro-textbox h1 {
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+
+  .about-me {
+    margin-top: 300px;
+  }
+
+  .about-hr {
+    width: 110px;
+    text-align: left;
+    margin: 16px 0;
+  }
+}
+
+@media (min-width: 815px) {
+
+  .home-banner {
+    margin-top: 60px;
+  }
+
+  .home-intro-textbox h1 {
+    font-size: 1.6em;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+
+  .home-img {
+    height: 600px;
+  }
+
+  .about-me {
+    margin-top: 300px;
+  }
+}
+
 
 
 @media (max-width: 500px) {
 
-    .home-banner {
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        height: 100vh;
-        margin: 0;
-        transform: none;
-        padding: 20px;
-    }
+  .home-banner {
+    height: 100vh;
+    margin: 0;
+    transform: none;
+  }
 
-    .home-intro {
-        width: 100%;
-        height: 50%;
-    }
+  .innerBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    height: 100vh;
+  }
 
-    .home-image {
-        width: 100%;
-    }
+  .home-intro {
+    width: 100%;
+    height: 50%;
+  }
 
-    .home-intro-textbox {
-        width: 100%;
-    }
+  .home-image {
+    width: 100%;
+    height: 50%;
+  }
 
-    .home-intro-textbox h1 {
-        font-size: 1.3em;
-        font-weight: 600;
-        color: #fff;
-        margin-bottom: 15px;
-    }
+  .home-intro-textbox {
+    width: 100%;
+    /* transform: skewY(-2deg); */
+  }
 
-    .my-face {
-        width: 100%;
-    }
+  .home-intro-textbox h1 {
+    font-size: 1.6em;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 15px;
+  }
 
-    .after-box {
-        height: 30px;
-    }
+  .my-face {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+  }
 
-    svg {
-        width: 100%;
-        height: 25px;
-        /* set height to pixels if you want angle to change with screen width */
-    }
+  .after-box {
+    height: 30px;
+  }
 
-    .about-me {
-        padding: 30px;
-    }
+  svg {
+    width: 100%;
+    height: 25px;
+  }
 
-    .about-hr {
-        width: 110px;
-        text-align: left;
-        margin: 16px 0;
-    }
+  .about-me {
+    padding: 30px;
+  }
 
-    .about-content {
-        line-height: 1.5em;
-        font-size: 1.2em;
-    }
-    
+  .about-hr {
+    width: 110px;
+    text-align: left;
+    margin: 16px 0;
+  }
+
+  .about-content {
+    line-height: 1.5em;
+    font-size: 1.2em;
+  }
 }

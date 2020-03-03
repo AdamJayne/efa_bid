@@ -10,6 +10,7 @@ import {
     Experience
 } from './Views';
 import Navbar from './components/Navbar';
+import ScrollToTop from './components/ScrollToTop';
 
 
 class App extends Component {
@@ -18,14 +19,16 @@ class App extends Component {
             <div>
                 <HashRouter>
                     <Navbar />
-                    <Switch>
-                        <Route exact path="/learning" component={Learning} />
-                        <Route exact path="/instruction" component={Instruction} />
-                        <Route exact path="/curriculum" component={Curriculum} />
-                        <Route exact path="/experience" component={Experience} />
-                        <Route exact path="/" component={Home} />
-                        <Route exact path="/**" component={NotFound} />
-                    </Switch>
+                    <ScrollToTop>
+                        <Switch>
+                            <Route exact path="/learning" component={Learning} />
+                            <Route exact path="/instruction" component={Instruction} />
+                            <Route exact path="/curriculum" component={Curriculum} />
+                            {/* <Route exact path="/experience" component={Experience} /> */}
+                            <Route exact path="/" component={Home} />
+                            <Route exact path="/**" component={NotFound} />
+                        </Switch>
+                    </ScrollToTop>
                 </HashRouter>
             </div>
         )
